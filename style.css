@@ -561,9 +561,11 @@ footer {
         padding-top: 20vw;
         padding-left: 1vw;
         transition: 0.3s ease;
-
         display: flex;
         flex-direction: column;
+    }
+    .menu-items:target {
+        display: none;
     }
     .menu-items a {
         color: #00003E;
@@ -578,6 +580,7 @@ footer {
     }
     #check:checked ~ main .nav-container .menu-items {
         right: 0;   
+        
     }
 
     .menu-items li a::after {
